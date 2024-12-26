@@ -1,0 +1,268 @@
+$image-directory: '../images/';
+
+html {
+  box-sizing: border-box;
+  height: auto;
+  margin-top: 0;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: family(primary) !important;
+  font-weight: weight(regular);
+  overflow-x: hidden;
+  position: relative;
+}
+
+*:focus {
+  outline: none !important;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+a,
+a:focus, a:hover {
+  text-decoration: none;
+}
+button {
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+.btn-check:focus + .btn,
+.btn:focus,
+.btn-primary:active:focus {
+  box-shadow: none;
+}
+ul {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+}
+blockquote,
+body,
+caption,
+dd,
+dl,
+fieldset,
+figure,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+legend,
+ol,
+p,
+pre,
+table,
+td,
+th,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s ease-in;
+  
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 1600px) {
+  .container {
+    max-width: 92.5rem !important;
+  }
+}
+
+%o-title-h1,
+.o-title-h1 {
+  font-size: size(title, h1);
+  line-height: lineheight(title, h1);
+
+  @media (max-width: 1536px) {
+    font-size: 3.75rem;
+    line-height: 4rem;
+  }
+
+  @media (max-width: 1280px) {
+    font-size: 2.75rem;
+    line-height: 3rem;
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 2rem;
+    line-height: 2.125rem;
+  }
+}
+
+%o-title-h2,
+.o-title-h2 {
+  font-size: size(title, h2);
+  line-height: lineheight(title, h2);
+
+  @media (max-width: 1536px) {
+    font-size: 2.81rem;
+    line-height: 3.125rem;
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 2.5rem;
+    line-height: 2.81rem;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 1.875rem;
+    line-height: 2.125rem;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+}
+
+%o-title-h3,
+.o-title-h3 {
+  font-size: size(title, h3);
+  line-height: lineheight(title, h3);
+}
+
+%o-title-h4,
+.o-title-h4 {
+  font-size: size(title, h4);
+  line-height: lineheight(title, h4);
+
+  @media (max-width: 1536px) {
+    font-size: 1.75rem;
+    line-height: 2rem;
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 1.625rem;
+    line-height: 1.875rem;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+  }
+}
+
+%o-title-h5,
+.o-title-h5 {
+  font-size: size(title, h5);
+  line-height: lineheight(title, h5);
+
+  @media (max-width: 1536px) {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+%o-paragraph-large,
+.o-paragraph-large {
+  font-size: size(paragraph, large);
+  line-height: lineheight(paragraph, large);
+
+  @media (max-width: 1536px) {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+%o-paragraph-medium,
+.o-paragraph-medium {
+  font-size: size(paragraph, medium);
+  line-height: lineheight(paragraph, medium);
+
+  @media (max-width: 1536px) {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
+}
+
+%o-paragraph-small,
+.o-paragraph-small {
+  font-size: size(paragraph, small);
+  line-height: lineheight(paragraph, small);
+
+  @media (max-width: 640px) {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+%o-paragraph-exlarge,
+.o-paragraph-exlarge {
+  font-size: size(paragraph, exlarge);
+  line-height: lineheight(paragraph, exlarge);
+
+  @media (max-width: 1536px) {
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+  }
+}
+
+%o-button,
+.o-button {
+  background-color: #4896FE26;
+  color: #002337;
+  padding: 12px 34px;
+  border: 1px solid #4896FE;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 19px;
+  line-height: 23px;
+  font-family: family(secondary);
+  font-weight: weight(medium);
+
+  @include media-down(laptop-large) { 
+    font-size: 14px;
+    line-height: 18px;
+    padding: 10px 25px;
+    border-radius: 10px;
+  }
+
+  i {
+    color: #002337;
+    margin-right: 10px;
+  }
+}

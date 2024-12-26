@@ -1,0 +1,58 @@
+.sidebar {
+    box-shadow: 5.33px 5.33px 53.33px 0px rgba(0, 0, 0, 0.06);
+    height: calc(100vh - 21.25rem);
+
+    .navigation-section {
+        font-family: family(primary);
+        overflow: auto;
+        height: calc(100vh - 26rem);
+
+        a {
+            color: $interface-gray;
+            transition: all 0.3s ease-out;
+            letter-spacing: 0.2px;
+
+            &:hover {
+                color: $interface-dark-gray;
+            }
+        }
+    }
+
+    .footer-privacy {
+        top: initial;
+
+        .footer-privacy-inner {
+            background-color: $interface-blue;
+            border-radius: 1.06rem;
+            position: relative;
+
+            .keep-text {
+                font-family: family(Gilory);
+            }
+
+            .safety-des {
+                font-family: family(Gilory-black);
+                color: $interface-light-black;
+            }
+
+            &:after {
+                content: "";
+                background-image: url(http://localhost/Sigma-Solve-Practical/wp-content/uploads/2024/12/box-bg.png);
+                position: absolute;
+                background-repeat: no-repeat;
+                background-size: contain;
+                bottom: -5.94rem;
+                left: 0;
+                z-index: 1;
+                width: 15rem;
+                height: 11.88rem;
+            }
+        } 
+
+        button {
+            font-family: family(Gilory-black);
+            z-index: 2;
+            position: relative;
+        }
+    }
+}

@@ -1,0 +1,306 @@
+.dashboard-main {
+    background-color: rgba(239, 243, 253, 1);
+
+    .dashboard-header {
+        h1 {
+            font-family: family(Gilory);
+            color: $interface-dark-gray;
+        }
+
+        .date-time {
+            color: $interface-gray;
+        }
+    }
+
+    .header-right-section {
+        .search-bar {
+            input {
+                border: 0;
+                color: $interface-blue;
+                padding-left: 64px;
+                width: 767px;
+                height: 64px;
+
+                @include media-down(desktop-large) {
+                    width: 650px;
+                }
+
+                @include media-down(desktop) {
+                    width: 530px;
+                }
+
+                @include media-down(laptop-large) {
+                    width: 420px;
+                    height: 50px;
+                } 
+            }
+        }
+
+        .notification-btn {
+            span {
+                background-color: $interface-pink;
+            }
+        }
+
+        #profile-btn {
+            span {
+                color: $interface-green;
+                font-family: family(gilroyblack);
+            }
+        }
+    }
+
+    .top-boxes-section {
+        .icon-img {
+            border-radius: 10px;
+            padding: 12px;
+            width: 53px;
+            height: auto;
+            object-fit: contain;
+            object-position: center;
+
+            @include media-down(laptop-large) {
+                width: 44px;
+            }
+        }
+        h2 {
+            font-family: family(secondary);
+        }
+        .chart-boxes {
+            position: relative;
+
+            &:after {
+                background-repeat: no-repeat;
+                background-size: contain;
+                position: absolute;
+                top: 25px;
+                right: 25px;
+                width: 140px;
+                height: 76px;
+
+                @include media-down(desktop) {
+                    top: 15px;
+                    right: 15px;
+                    width: 120px;
+                    height: auto;
+                }
+            }
+
+            &:first-child {
+                .icon-img {
+                    background-color: #FFCC40;
+                }
+                .trend-section { 
+                    color: #00DEA3;
+                }
+                &:after {
+                    content: "";
+                    background-image: url(http://localhost/Sigma-Solve-Practical/wp-content/uploads/2024/12/growth-img.png);  
+                }
+            }
+            &:nth-child(2) {
+                .icon-img {
+                    background-color: #002337;
+                }
+                .trend-section { 
+                    color: #F23985;
+                }
+                &:after {
+                    content: "";
+                    background-image: url(http://localhost/Sigma-Solve-Practical/wp-content/uploads/2024/12/decrease-img.png);
+                }
+            }
+            &:nth-child(3) {
+                .icon-img {
+                    background-color: #FE8F66;
+                }
+                .trend-section { 
+                    color: #00DEA3;
+                }
+                &:after {
+                    content: "";
+                    background-image: url(http://localhost/Sigma-Solve-Practical/wp-content/uploads/2024/12/growth-img.png);
+                }
+            }
+            &:nth-child(4) {
+                .icon-img {
+                    background-color: #311D05;
+                }
+                .trend-section { 
+                    color: #00DEA3;
+                }
+                &:after {
+                    content: "";
+                    background-image: url(http://localhost/Sigma-Solve-Practical/wp-content/uploads/2024/12/growth-img.png);
+                }
+            }
+        }
+        .count-big {
+            font-family: family(Gilory-black);
+        }
+        .trend-section {
+            font-family: family(Gilory-black);
+    
+            img {
+                width: 18px;
+                height: auto;
+                object-fit: contain;
+                margin-right: 5px;
+            }
+        }
+    }
+    .update-block {
+        h2 {
+            font-family: family(Gilory);
+        }
+        p {
+            color: #5A5A5A;
+            font-family: family(primary);
+        }
+        .updates-list {
+            img {
+                border-radius: 10px;
+                padding: 12px;
+                width: 53px;
+                height: auto;
+                object-fit: contain;
+                object-position: center;  
+
+                @include media-down(desktop) {
+                    padding: 8px;
+                    width: 40px;
+                }
+            }
+           .dashboard-1 {
+                img {
+                    background-color: #FFCC40;
+                }
+           } 
+           .dashboard-2 {
+                img {
+                    background-color: #002337;
+                }
+            } 
+            .dashboard-3 {
+                img {
+                    background-color: #FE8F66;
+                }
+            } 
+            .dashboard-4 {
+                img {
+                    background-color: #311D05;
+                }
+            } 
+            .dashboard-5 {
+                img {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 0;
+                    padding: 0;
+                }
+            } 
+           h3 {
+            color: #1E293B;
+            font-family: family(secondary);
+           }
+           p {
+            color: #5A5A5A;
+            font-family: family(secondary);
+           }
+        }
+    }
+}
+.leads-update-list {
+    .leads-list-header {
+        h2 {
+            color: #202020;
+            font-family: family(Gilory);
+        }
+        p {
+            color: #5A5A5A;
+            font-family: family(primary);
+        }
+        .search-section {
+            input {
+                width: 496px;
+                border: 1px solid #DCDCDC;
+                padding: 14px 20px;
+                border-radius: 10px;
+
+                @include media-down(laptop-large) {
+                    padding: 12px 15px;
+                    width: 380px;
+                }
+            }
+            span {
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                height: 25px;
+                right: 20px;
+
+                @include media-down(desktop) {
+                    height: 20px;
+                    right: 10px;
+                }
+
+                @include media-down(laptop-large) {
+                    height: 15px;
+                }
+            }
+        }
+    }
+}
+.filter-section {
+    select, .date-picker {
+        border: 1px solid #DCDCDC;
+        border-radius: 10px;
+        padding: 13px 16px;
+        min-width: 170px;
+        
+        @include media-down(desktop) {
+            min-width: 150px;
+        }
+
+        @include media-down(laptop-large) {
+            padding: 7px 7px;
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+    .date-picker {
+        input {
+            border: 0;
+            min-width: 240px;
+        }
+    }
+}
+.data-table {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    thead {
+        tr {
+            background-color: $interface-blue;
+            border: 0;
+        }
+        tr, th, td {
+            border: 0;
+        }
+    }
+    td {
+        color: #202020;
+    }
+}
+
+.pagination {
+    .previous-page {
+        .li-arrow-down {
+            transform: rotate(90deg);
+        }
+    }
+    .next-page {
+        .li-arrow-down {
+            transform: rotate(-90deg);
+        }
+    }
+}
